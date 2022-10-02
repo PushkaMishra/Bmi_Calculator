@@ -2,14 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Bminfo from "./Components/Bminfo";
 import { useState } from "react";
-import About from "./Components/About";
-
-import 
-{ BrowserRouter as Router, 
-  Switch, 
-  Route,
- } 
-  from "react-router-dom";
+// import About from "./Components/About";
 
 function App() {
   const [mode, setmode] = useState("light");
@@ -26,22 +19,22 @@ function App() {
   return (
     <>
     
-      <Router>
+      {/* <Router> */}
       <Navbar togglemode={togglemode} mode={mode} />
 
 
-        <Switch>
+        {/* <Switch> */}
         
-        <Route path="/about">
-            <About mode={mode} />
-          </Route>
+        {/* <Route path="/about"> */}
+            {/* <About mode={mode} /> */}
+          {/* </Route> */}
 
-        <Route path="/">
+        {/* <Route path="/"> */}
           <Bminfo mode={mode}/>
-          </Route>
+          {/* </Route> */}
       
-        </Switch>
-      </Router>
+        {/* </Switch> */}
+      {/* </Router> */}
     </>
   );
 }
